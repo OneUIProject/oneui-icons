@@ -10,7 +10,7 @@ Currently, `957` icons are available (13.07.2022). Special thanks to [Maulana990
 
 Pick oneui icons directly from Android Studio's Asset Studio by going to `File > New > Vector Asset > Clip Art` and searching for `oui`.
 
-For this to work, you need to download [material.zip](material.zip) and extract it to `<android_sdk_dir>/icons/material/`. Replace `icons_metadata.txt` and merge the contents of `materialicons`.
+For this to work, you need to download [material.zip](https://github.com/OneUIProject/oneui-icons/raw/main/material.zip) and extract it to `<android_sdk_dir>/icons/material/`. Replace `icons_metadata.txt` and merge the contents of `materialicons`.
 
 Default SDK location:
 - Windows: `C:/Users/<username>/AppData/Local/Android/Sdk/`
