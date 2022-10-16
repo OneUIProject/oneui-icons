@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+    id 'com.vanniktech.maven.publish'
+}
+
+android {
+    compileSdk target_sdk
+
+    defaultConfig {
+        minSdk 23
+        targetSdk target_sdk
+        versionCode 1
+        versionName lib_version
+
+        vectorDrawables.useSupportLibrary = true
+    }
+}

@@ -1,0 +1,8 @@
+// Environment variables.
+ext {
+    // Target & Compile SDK.
+    target_sdk = 31
+
+    // Library version.
+    lib_version = "1.0.0"
+}

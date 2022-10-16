@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: 'manifest.gradle'
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath 'com.vanniktech:gradle-maven-publish-plugin:0.19.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
+            androidVariantToPublish = "release"
+        }
+    }
+}
+
+subprojects {
+    afterEvaluate {
+        if (plugins.hasPlugin('com.vanniktech.maven.publish')) {
+            group = "io.github.oneuiproject"
+            version = android.defaultConfig.versionName
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    POM_INCEPTION_YEAR = "2022"
+    POM_PACKAGING = "aar"
+
+    POM_URL = "https://github.com/OneUIProject/oneui-icons"
+    POM_SCM_URL = "https://github.com/OneUIProject/oneui-icons"
+    POM_SCM_CONNECTION = "scm:git@github.com:OneUIProject/oneui-icons.git"
+    POM_SCM_DEV_CONNECTION = "scm:git@github.com:OneUIProject/oneui-icons.git"
+
+    POM_LICENCE_NAME = "MIT License"
+    POM_LICENCE_URL = "https://github.com/OneUIProject/oneui-icons/blob/master/LICENSE"
+    POM_LICENCE_DIST = "repo"
+
+    POM_DEVELOPER_ID = "OUIProject"
+    POM_DEVELOPER_NAME = "OneUI Project"
+    POM_DEVELOPER_URL = "https://github.com/OneUIProject"
+}
