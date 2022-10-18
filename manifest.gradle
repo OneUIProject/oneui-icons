@@ -4,5 +4,5 @@ ext {
     target_sdk = 31
 
     // Library version.
-    lib_version = "1.0.0"
+    lib_version = "1.0.1"
 }

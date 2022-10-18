@@ -38,4 +38,4 @@ After you've extracted the zip you can open the Asset Studio and find all the on
 - Some icons might not work, in this case you can also get them from [below](#alternative). (I'm working on a fix)
 
 ## Alternative
-If you're not using Android Studio or need them as a file you can get them all [here](lib\src\main\res\drawable).
+If you're not using Android Studio or need them as a file you can get them all [here](lib/src/main/res/drawable).
