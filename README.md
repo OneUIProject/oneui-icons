@@ -16,6 +16,9 @@ dependencies {
 }
 ```
 
+
+[Migration guide from 1.0.1 to 1.1.0](readme-res/migration_1_0_1_to_1_1_0.md)
+
 ## Android Studio's Asset Studio
 
 <p align="center">
