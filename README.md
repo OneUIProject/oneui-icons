@@ -1,6 +1,6 @@
 # OneUI Icons
 
-Currently, `957` icons are available (13.07.2022). Special thanks to [Maulana990](https://github.com/Maulana990).
+Currently, `883` icons are available (27.02.2023). Special thanks to [Maulana990](https://github.com/Maulana990).
 
 You can get all the icons either as a [library](#library), include them [directly in Android Studio](#android-studios-asset-studio) or as [single files](#alternative). 
 
@@ -15,6 +15,9 @@ dependencies {
     implementation 'io.github.oneuiproject:icons:<version>'
 }
 ```
+
+
+[Migration guide from 1.0.1 to 1.1.0](readme-res/migration_1_0_1_to_1_1_0.md)
 
 ## Android Studio's Asset Studio
 
